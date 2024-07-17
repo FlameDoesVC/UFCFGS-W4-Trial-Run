@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!--error handling (aka: why not)-->
+    <category>
+        <pattern>Why not</pattern>
+        <template>
+            <condition name="error">
+                <li value="nocity">Because I do not have a category to connect me to a mapping service</li>
+                <li value="population">Because it is too hard to count the residents of <get name="lastaskedlocation" /></li>
+                <li><srai>oogaboogaerrorohnobooooooooo</srai></li>
+            </condition>
+        </template>
+    </category>
+    
+    <!--where-->
+    <category>
+        <pattern>
+            ^ <set>where</set> ^
+        </pattern>
+        <template>
+            <think><set var="input"><first><star index="3"/></first></set></think>
+            <condition var="input">
+                <li value="it">
+                    <think><set var="input"><get name="lastaskedlocation" /></set></think>
+                </li>
+                <li value="chatter">
+                    <think><set var="input">that's an error</set></think>
+                </li>
+            </condition>
+            <think><set var="checklocations"><map name="locations"><get var="input" /></map></set></think>
+            <condition var="checklocations">
+                <li value="unknown"><think><set name="error">nocity</set></think>I do not know where <get var="input"/> is</li>
+                <li><think><set name="error">noerror</set></think><get var="checklocations" /></li>
+            </condition>
+        </template>
+    </category>
+    
+    <!--population-->
+    <category>
+        <pattern>
+            ^ <set>population</set> ^
+        </pattern>
+        <template>
+            <think><set var="checkpopulations"><map name="populations"><star index="3"/></map></set></think>
+            <condition var="checkpopulations">
+                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star index="3"/></set></think>I do not know what the population of <star index="3"/> is</li>
+                <li><think><set name="error">noerror</set></think>The population of <star index="3"/> is about <get var="checkpopulations" /></li>
+            </condition>
+        </template>
+    </category>
+    
+    <!--what is-->
+    <category>
+        <pattern>What is *</pattern>
+        <template>
+            <think><set var="populationcheck"><first><rest><star/></rest></first></set></think>
+            <think><set name="error">noerror</set></think>
+            <think><set var="input"><star/></set></think>
+            <condition var="populationcheck">
+                <li value="population">
+                    <think><set var="input">that's an error</set></think>
+                </li>
+            </condition>
+            <think><set var="checklocations"><map name="locations"><get var="input"/></map></set></think>
+            <condition var="checklocations">
+                <li value="unknown">I do not have an answer for that</li>
+                <li value="In the eye of the beholder">A subjective judgment evoked by an emotional response</li>
+                <li value="In north Bristol"><srai>ohnoyetanothererrorwhoopsies</srai></li>
+                <li value="I do not have an answer for that"><sr/></li>
+                <li><formal><set name="lastaskedlocation"><star/></set></formal> is a city.</li>
+            </condition>
+        </template>
+    </category>
+    
+    <!--udc-->
+    <category>
+        <pattern>*</pattern>
+        <template>I do not have an answer for that</template>
+    </category>
+</aiml>

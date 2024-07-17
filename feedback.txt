@@ -1,0 +1,557 @@
+Name = main Path = D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main
+c:/ab
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/aiml
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/aimlif
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/config
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/logs
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/sets
+D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/maps
+Preprocessor: 0 norms 0 persons 0 person2 
+Get Properties: D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/config/properties.txt
+Loading AIML Sets files from D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/sets
+population.txt
+Read AIML Set population
+Reading AIML Set D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/sets/population.txt
+where.txt
+Read AIML Set where
+Reading AIML Set D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/sets/where.txt
+Loaded 6 set elements.
+Loading AIML Map files from D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/maps
+locations.txt
+Read AIML Map locations
+Reading AIML Map D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/maps/locations.txt
+populations.txt
+Read AIML Map populations
+Reading AIML Map D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/maps/populations.txt
+Loaded 9 map elements
+Read pronouns: []
+AIML modified Wed Jul 17 17:35:54 MVT 2024 AIMLIF modified Wed Jul 17 17:35:54 MVT 2024
+AIML modified after AIMLIF
+Loading AIML files from D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/aiml
+main.aiml
+Loaded 5 categories in 0.16 sec
+writeAIMLIFFiles
+main (brain): 7 categories 44 nodes 35 singletons 7 leaves 0 shortcuts 2 n-ary 43 branches 0.97727275 average branching 
+main (learnf): 0 categories 1 nodes 0 singletons 0 leaves 0 shortcuts 0 n-ary 0 branches 0.0 average branching 
+Loading Triples from D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/config/triples.txt
+Loaded 0 triples
+Chat Session Created for bot main
+
+ in chat.multisentenceRespond(), normalized: Where is Bristol
+input: Where is Bristol, that: unknown, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is London
+input: Where is London, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to London in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is Bath
+input: Where is Bath, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is UWE
+input: Where is UWE, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is beauty
+input: Where is beauty, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is Bristol
+input: Whereabouts is Bristol, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is London
+input: Whereabouts is London, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to London in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is Bath
+input: Whereabouts is Bath, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is beauty
+input: Whereabouts is beauty, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where Bristol is
+input: Tell me where Bristol is, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where Bath is
+input: Tell me where Bath is, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where UWE is
+input: Tell me where UWE is, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where beauty is
+input: Tell me where beauty is, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is Bristol please?
+input: Where is Bristol please, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where London is please
+input: Tell me where London is please, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to London in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is UWE please
+input: Where is UWE please, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is beauty please?
+input: Whereabouts is beauty please, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is Bristol Chatter
+input: Where is Bristol Chatter, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is Bath Chatter
+input: Whereabouts is Bath Chatter, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is UWE Chatter
+input: Where is UWE Chatter, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is beauty Chatter?
+input: Whereabouts is beauty Chatter, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is Bristol please Chatter
+input: Where is Bristol please Chatter, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is Bath please Chatter
+input: Whereabouts is Bath please Chatter, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Tell me where London is please Chatter
+input: Tell me where London is please Chatter, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to London in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is UWE please Chatter
+input: Where is UWE please Chatter, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Whereabouts is beauty please Chatter
+input: Whereabouts is beauty please Chatter, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to beauty in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the eye of the beholder  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Why not?
+input: Why not, that: In the eye of the beholder, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHY NOT <THAT> * <TOPIC> * main.aiml
+oogaboogaerrorohnobooooooooo
+0. <srai>oogaboogaerrorohnobooooooooo</srai> from WHY NOT <THAT> * <TOPIC> * topic=unknown) 
+Matched: * <THAT> * <TOPIC> * main.aiml
+Robot: I do not have an answer for that  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is Keynsham
+input: Where is Keynsham, that: I do not have an answer for that, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Keynsham in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to unknown in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to nocity in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; nocity; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: I do not know where Keynsham is  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Why not?
+input: Why not, that: I do not know where Keynsham is, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHY NOT <THAT> * <TOPIC> * main.aiml
+Robot: Because I do not have a category to connect me to a mapping service  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is beauty?
+input: What is beauty, that: Because I do not have a category to connect me to a mapping service, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to NIL in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to beauty in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to In the eye of the beholder in WHAT IS * <THAT> * <TOPIC> *
+Robot: A subjective judgment evoked by an emotional response  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Please tell me where Bath is Chatter
+input: Please tell me where Bath is Chatter, that: A subjective judgment evoked by an emotional response, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to Bath in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In Somerset in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In Somerset  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Chatter where is UWE please?
+input: Chatter where is UWE please, that: In Somerset, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to UWE in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In north Bristol  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Please Please tell me where london is
+input: Please Please tell me where london is, that: In north Bristol, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to london in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is chatter?
+input: Where is chatter, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to chatter in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var input to that's an error in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to I do not have an answer for that in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: I do not have an answer for that  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Chatter please
+input: Chatter please, that: I do not have an answer for that, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: * <THAT> * <TOPIC> * main.aiml
+Robot: I do not have an answer for that  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Is Bath in Bristol
+input: Is Bath in Bristol, that: I do not have an answer for that, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: * <THAT> * <TOPIC> * main.aiml
+Robot: I do not have an answer for that  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is Bristol?
+input: What is Bristol, that: I do not have an answer for that, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to NIL in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to Bristol in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in WHAT IS * <THAT> * <TOPIC> *
+Set predicate lastaskedlocation to Bristol in WHAT IS * <THAT> * <TOPIC> *
+Added : lastaskedlocation; Bristol; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Bristol is a city.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is it?
+input: Where is it, that: Bristol is a city, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to it in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var input to Bristol in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to In the South-West of the U.K. in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: In the South-West of the U.K.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is London?
+input: What is London, that: K, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to NIL in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to London in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in WHAT IS * <THAT> * <TOPIC> *
+Set predicate lastaskedlocation to London in WHAT IS * <THAT> * <TOPIC> *
+Added : lastaskedlocation; London; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: London is a city.  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Where is it?
+input: Where is it, that: London is a city, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var input to it in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var input to London in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set var checklocations to Roughly half-way between Hatfield and Severnoaks in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>WHERE</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: Roughly half-way between Hatfield and Severnoaks  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is the population of Bristol?
+input: What is the population of Bristol, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to population in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to the population of Bristol in WHAT IS * <THAT> * <TOPIC> *
+Set var input to that's an error in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to I do not have an answer for that in WHAT IS * <THAT> * <TOPIC> *
+input: the population of Bristol, that: Roughly half-way between Hatfield and Severnoaks, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to 430000 in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: The population of Bristol is about 430000  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: How many people live in Bristol
+input: How many people live in Bristol, that: The population of Bristol is about 430000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to 430000 in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: The population of Bristol is about 430000  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is the population of Bath?
+input: What is the population of Bath, that: The population of Bristol is about 430000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to population in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to the population of Bath in WHAT IS * <THAT> * <TOPIC> *
+Set var input to that's an error in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to I do not have an answer for that in WHAT IS * <THAT> * <TOPIC> *
+input: the population of Bath, that: The population of Bristol is about 430000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to 84000 in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: The population of Bath is about 84000  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: How many people live in Bath
+input: How many people live in Bath, that: The population of Bath is about 84000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to 84000 in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: The population of Bath is about 84000  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is the population of London?
+input: What is the population of London, that: The population of Bath is about 84000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to population in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to the population of London in WHAT IS * <THAT> * <TOPIC> *
+Set var input to that's an error in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to I do not have an answer for that in WHAT IS * <THAT> * <TOPIC> *
+input: the population of London, that: The population of Bath is about 84000, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to 8.6 million in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to noerror in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; noerror; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: The population of London is about 8.6 million  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: What is UWE
+input: What is UWE, that: 6 million, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHAT IS * <THAT> * <TOPIC> * main.aiml
+Set var populationcheck to NIL in WHAT IS * <THAT> * <TOPIC> *
+Set predicate error to noerror in WHAT IS * <THAT> * <TOPIC> *
+Added : error; noerror; WHAT IS * <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set var input to UWE in WHAT IS * <THAT> * <TOPIC> *
+Set var checklocations to In north Bristol in WHAT IS * <THAT> * <TOPIC> *
+ohnoyetanothererrorwhoopsies
+0. <srai>ohnoyetanothererrorwhoopsies</srai> from WHAT IS * <THAT> * <TOPIC> * topic=unknown) 
+Matched: * <THAT> * <TOPIC> * main.aiml
+Robot: I do not have an answer for that  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: How many people live in Keynsham
+input: How many people live in Keynsham, that: I do not have an answer for that, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to unknown in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to population in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; population; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set predicate lastaskedlocation to Keynsham in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : lastaskedlocation; Keynsham; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: I do not know what the population of Keynsham is  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Why not?
+input: Why not, that: I do not know what the population of Keynsham is, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHY NOT <THAT> * <TOPIC> * main.aiml
+Robot: Because it is too hard to count the residents of Keynsham  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: How many people live in space
+input: How many people live in space, that: Because it is too hard to count the residents of Keynsham, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> * main.aiml
+Set var checkpopulations to unknown in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Set predicate error to population in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : error; population; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Set predicate lastaskedlocation to space in ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *
+Added : lastaskedlocation; space; ^ <SET>POPULATION</SET> ^ <THAT> * <TOPIC> *;  to arrayList in Logs.class
+Robot: I do not know what the population of space is  
+writeCertainIFCaegories learnf.aiml size= 0
+
+ in chat.multisentenceRespond(), normalized: Why not?
+input: Why not, that: I do not know what the population of space is, topic: unknown, chatSession: org.alicebot.ab.Chat@6f79caec, srCnt: 0
+Matched: WHY NOT <THAT> * <TOPIC> * main.aiml
+Robot: Because it is too hard to count the residents of space  
+writeCertainIFCaegories learnf.aiml size= 0
+Number of exactly correct answers: 50
+Number of categories used:5
+Final Score: 100
