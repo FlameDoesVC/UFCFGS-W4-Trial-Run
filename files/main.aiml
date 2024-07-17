@@ -23,6 +23,9 @@
                 <li value="it">
                     <think><set var="input"><get name="lastaskedlocation" /></set></think>
                 </li>
+                <li value="chatter">
+                    <think><set var="input">that's an error</set></think>
+                </li>
             </condition>
             <think><set var="checklocations"><map name="locations"><get var="input" /></map></set></think>
             <condition var="checklocations">
@@ -34,19 +37,15 @@
     
     <!--population-->
     <category>
-        <pattern>What is the $population of *</pattern>
+        <pattern>
+            ^ <set>population</set> ^
+        </pattern>
         <template>
-            <think><set var="checkpopulations"><map name="populations"><star/></map></set></think>
+            <think><set var="checkpopulations"><map name="populations"><star index="3"/></map></set></think>
             <condition var="checkpopulations">
-                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star/></set></think>I do not know where <star/> is</li>
-                <li><think><set name="error">noerror</set></think>The population of <star/> is about <get var="checkpopulations" /></li>
+                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star index="3"/></set></think>I do not know where <star index="3"/> is</li>
+                <li><think><set name="error">noerror</set></think>The population of <star index="3"/> is about <get var="checkpopulations" /></li>
             </condition>
-        </template>
-    </category>
-    <category>
-        <pattern>How many people live in *</pattern>
-        <template>
-            <srai>what is the population of <star/></srai>
         </template>
     </category>
     
@@ -54,12 +53,20 @@
     <category>
         <pattern>What is *</pattern>
         <template>
+            <think><set var="populationcheck"><first><rest><star/></rest></first></set></think>
             <think><set name="error">noerror</set></think>
-            <think><set var="checklocations"><map name="locations"><star/></map></set></think>
+            <think><set var="input"><star/></set></think>
+            <condition var="populationcheck">
+                <li value="population">
+                    <think><set var="input">that's an error</set></think>
+                </li>
+            </condition>
+            <think><set var="checklocations"><map name="locations"><get var="input"/></map></set></think>
             <condition var="checklocations">
                 <li value="unknown">I do not have an answer for that</li>
                 <li value="In the eye of the beholder">A subjective judgment evoked by an emotional response</li>
                 <li value="In north Bristol"><srai>ohnoyetanothererrorwhoopsies</srai></li>
+                <li value="I do not have an answer for that"><sr/></li>
                 <li><formal><set name="lastaskedlocation"><star/></set></formal> is a city.</li>
             </condition>
         </template>
