@@ -27,11 +27,11 @@ Read AIML Map populations
 Reading AIML Map D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/maps/populations.txt
 Loaded 9 map elements
 Read pronouns: []
-AIML modified Wed Jul 17 17:35:54 MVT 2024 AIMLIF modified Wed Jul 17 17:35:54 MVT 2024
+AIML modified Wed Jul 17 17:45:32 MVT 2024 AIMLIF modified Wed Jul 17 17:45:32 MVT 2024
 AIML modified after AIMLIF
 Loading AIML files from D:\college stuff\Sem2\AI\UFCFGS-W4-Trial-Run/main/aiml
 main.aiml
-Loaded 5 categories in 0.16 sec
+Loaded 5 categories in 0.205 sec
 writeAIMLIFFiles
 main (brain): 7 categories 44 nodes 35 singletons 7 leaves 0 shortcuts 2 n-ary 43 branches 0.97727275 average branching 
 main (learnf): 0 categories 1 nodes 0 singletons 0 leaves 0 shortcuts 0 n-ary 0 branches 0.0 average branching 
