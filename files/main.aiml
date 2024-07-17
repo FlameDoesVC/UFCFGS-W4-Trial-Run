@@ -71,4 +71,10 @@
             </condition>
         </template>
     </category>
+    
+    <!--udc-->
+    <category>
+        <pattern>*</pattern>
+        <template>I do not have an answer for that</template>
+    </category>
 </aiml>
