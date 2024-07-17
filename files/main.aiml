@@ -43,7 +43,7 @@
         <template>
             <think><set var="checkpopulations"><map name="populations"><star index="3"/></map></set></think>
             <condition var="checkpopulations">
-                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star index="3"/></set></think>I do not know where <star index="3"/> is</li>
+                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star index="3"/></set></think>I do not know what the population of <star index="3"/> is</li>
                 <li><think><set name="error">noerror</set></think>The population of <star index="3"/> is about <get var="checkpopulations" /></li>
             </condition>
         </template>
