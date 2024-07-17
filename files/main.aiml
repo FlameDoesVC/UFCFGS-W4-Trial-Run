@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <category>
-        <pattern>AIMLLOCATION *</pattern>
-        <template>
-            <think><set var="checklocations"><map name="locations"><star/></map></set></think>
-            <condition var="checklocations">
-                <li value="unknown"><think><set name="error">nocity</set></think>I do not know where <star/> is</li>
-                <li><think><set name="error">noerror</set></think><get var="checklocations" /></li>
-            </condition>
-        </template>
-    </category>
-    
+    <!--error handling (aka: why not)-->
     <category>
         <pattern>Why not</pattern>
         <template>
-            <think><set var="checkerror"><get name="error" /></set></think>
-            <condition var="checkerror">
+            <condition name="error">
                 <li value="nocity">Because I do not have a category to connect me to a mapping service</li>
                 <li value="population">Because it is too hard to count the residents of <get name="lastaskedlocation" /></li>
                 <li><srai>oogaboogaerrorohnobooooooooo</srai></li>
@@ -23,52 +12,45 @@
         </template>
     </category>
     
+    <!--where-->
     <category>
-        <pattern>Where is *</pattern>
+        <pattern>
+            ^ <set>where</set> ^
+        </pattern>
         <template>
-            <think><set var="checkit"><star/></set></think>
-            <condition var="checkit">
-                <li value="it"><srai>AIMLLOCATION <get name="lastaskedlocation" /></srai></li>
-                <li><srai>AIMLLOCATION <star/></srai></li>
+            <think><set var="input"><first><star index="3"/></first></set></think>
+            <condition var="input">
+                <li value="it">
+                    <think><set var="input"><get name="lastaskedlocation" /></set></think>
+                </li>
+            </condition>
+            <think><set var="checklocations"><map name="locations"><get var="input" /></map></set></think>
+            <condition var="checklocations">
+                <li value="unknown"><think><set name="error">nocity</set></think>I do not know where <get var="input"/> is</li>
+                <li><think><set name="error">noerror</set></think><get var="checklocations" /></li>
             </condition>
         </template>
     </category>
     
+    <!--population-->
     <category>
-        <pattern>_ where * _</pattern>
+        <pattern>What is the $population of *</pattern>
         <template>
-            <srai>Where is <star index="2"/></srai>
+            <think><set var="checkpopulations"><map name="populations"><star/></map></set></think>
+            <condition var="checkpopulations">
+                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star/></set></think>I do not know where <star/> is</li>
+                <li><think><set name="error">noerror</set></think>The population of <star/> is about <get var="checkpopulations" /></li>
+            </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>How many people live in *</pattern>
+        <template>
+            <srai>what is the population of <star/></srai>
         </template>
     </category>
     
-    <category>
-        <pattern>_ where is * _</pattern>
-        <template>
-            <srai>Where is <star index="2"/></srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Whereabouts is *</pattern>
-        <template>
-            <srai>Where is <star/></srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Tell me where * is</pattern>
-        <template>
-            <srai>Where is <star/></srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Where is * _</pattern>
-        <template>
-            <srai>Where is <star/></srai>
-        </template>
-    </category>
-    
+    <!--what is-->
     <category>
         <pattern>What is *</pattern>
         <template>
@@ -78,24 +60,8 @@
                 <li value="unknown">I do not have an answer for that</li>
                 <li value="In the eye of the beholder">A subjective judgment evoked by an emotional response</li>
                 <li value="In north Bristol"><srai>ohnoyetanothererrorwhoopsies</srai></li>
-                <li><set name="lastaskedlocation"><star/></set> is a city.</li>
+                <li><formal><set name="lastaskedlocation"><star/></set></formal> is a city.</li>
             </condition>
         </template>
-    </category>
-    
-    <category>
-        <pattern>what is the population of *</pattern>
-        <template>
-            <think><set var="checkpopulations"><map name="populations"><star/></map></set></think>
-            <condition var="checkpopulations">
-                <li value="unknown"><think><set name="error">population</set><set name="lastaskedlocation"><star/></set></think>I do not know where <star/> is</li>
-                <li><think><set name="error">noerror</set></think>The population of <star/> is about <get var="checkpopulations" /></li>
-            </condition>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>How many people live in *</pattern>
-        <template><srai>what is the population of <star/></srai></template>
     </category>
 </aiml>
